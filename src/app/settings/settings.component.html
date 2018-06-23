@@ -1,0 +1,29 @@
+<div>
+  <br>
+  <span>
+    Language:
+    <mat-form-field>
+      <mat-select placeholder="Favorite Language">
+        <mat-option *ngFor="let lan of langs" [value]="lan.value">
+          {{ lan.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br> No. of words:
+    <mat-form-field>
+      <mat-select placeholder="Number of words">
+        <mat-option *ngFor="let num of nums" [value]="num.value">
+          {{ num.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+
+  </span>
+
+  <br>
+  <button mat-raised-button color="warn">Back</button>
+  <button mat-raised-button color="primary">Save</button>
+
+</div>
