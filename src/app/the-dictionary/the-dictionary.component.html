@@ -1,0 +1,16 @@
+<div>
+  <mat-list>
+    <mat-list-item *ngFor="let dict of dictionary">
+      <p matLine>
+        <span> {{dict.word}} </span>
+        <span> - {{dict.translation}} </span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+
+  <mat-form-field class="example-full-width">
+    <input #word matInput placeholder="enter a new word">
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" (click)="translateWord(word.value)">Add new</button>
+</div>

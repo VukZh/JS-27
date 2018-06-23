@@ -1,0 +1,14 @@
+<div>
+  <h2>
+  {{_word}}
+</h2>
+<!-- <input matInput placeholder="enter"> -->
+<mat-form-field class="example-full-width">
+    <input #textbox matInput placeholder="enter the translation">
+</mat-form-field>
+
+<br>
+<br>
+<button mat-raised-button color="primary" (click)="nxtWord(textbox.value)">Next</button>
+
+</div>
